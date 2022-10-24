@@ -8,6 +8,12 @@ h1, h2{
     padding: 0;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8vw;
+}
+
 
 /*----Class Mods-----*/
 .my-name-hdr{
@@ -61,13 +67,15 @@ h1, h2{
 
 .section-container{
     display: flex;
-    margin: 6vw 8vw 0 15vw;
+    margin: 2vw 0;
     color: #303030;
 }
 
 .main-section-content{
     display: flex;
+    flex-wrap: wrap;
     border-left: .3vw solid #303030;
+    width: 80%;
     /*--flex rules--*/
     flex-direction: column;
 
@@ -76,14 +84,33 @@ h1, h2{
 .main-section-hdr{
     display: flex;
     font-size: 3vw;
+    width: 20%;
     margin: 0 1vw 0 0;
     flex-direction: column;
     align-items: end;
 }
 
+.big-work-tile img{
+    height: 62vw;
+    width: 62vw;
+    margin: 0 0 0 2.5vw;
+    border: .3vw solid lightblue; 
+    filter: grayscale(70%) blur(2px); 
+    transition: .5s filter linear;
+}
+
+.big-work-tile img:hover{
+    transition: .5s filter linear;
+    filter: grayscale(0%) blur(0px);
+}
+
+
+
+
+
 /*-----Specific Mods-----*/
 ul li a{
-    color: #7ebdb7;
+    color: #eb127752;
     text-decoration: none;
     padding: 0 .6vw .5vw;
     border-bottom: 4px  solid #7ebdb7;   
@@ -92,5 +119,4 @@ ul li a{
 .main-section-content p{
     font-size: 1.5vw;
     margin: 1vw 0 1vw 2.5vw;
-
 }
