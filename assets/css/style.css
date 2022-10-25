@@ -156,14 +156,14 @@ main{
     display: flex;
     font-size: 2vw;
     list-style-type: none;
-    color: #eb127752;    
+    color: #303030;    
     justify-content: space-between;
 }
 
 
 /*-----Specific Mods-----*/
 .hdr-nav-list li a{
-    color: #eb127752;
+    color: #7ebdb7;
     text-decoration: none;
     padding: 0 .6vw .5vw;
     border-bottom: 4px  solid #7ebdb7;   
