@@ -4,18 +4,40 @@ body{
     padding: 0;
 }
 
-h1, h2{
-    margin: 0;
-    padding: 0;
-}
-
 main{
     display: flex;
     flex-direction: column;
     margin: 0 8vw;
 }
 
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
 /*----Class Mods-----*/
+.scrolling-hdrs {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30%;
+}
+
+.scrolling-hdrs-about {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+}
+
+.scrolling-hdrs-me {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30%;
+}
 .my-name-hdr{
     font-size: 4vw;
     padding: .2% 1% .2% 5.5%;
@@ -91,7 +113,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     border-left: .3vw solid #303030;
-    width: 80%;
+    width: 64vw;
     /*--flex rules--*/
     flex-direction: column;
 
@@ -109,7 +131,7 @@ main{
 
 .big-work-tile img{
     height: 62vw;
-    width: 62vw;
+    width: 64vw;
     margin: 0 0 0 2.5vw;
     border: .3vw solid lightblue; 
     filter: grayscale(70%) blur(2px); 
@@ -129,6 +151,23 @@ main{
     justify-content: space-between;
 }
 
+.small-work-tiles {
+    text-align: center;
+}
+
+.small-work-tiles h2 {
+    position: relative;
+    bottom: 14vw;
+    left: 3vw;
+    color: rgb(42, 11, 155);
+    background-color: white;
+    width: 24vw;
+    border-radius: 8px;
+    border: solid rgb(73, 72, 72) 2px;
+    pointer-events: none;
+}
+
+
 .small-work-tiles img{
     height: 15vw;
     width: 30vw;
@@ -145,7 +184,7 @@ main{
 
 .contact-me-section{
     color: #303030;
-    width: 80%;
+    width: 64vw;
     border-left: .3vw solid #303030;
 }
 .contact-me-list{
